@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hospital</title>
+  <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="sc.css">
+</head>
+<body>
+  <header>    
+    <nav>    
+      <div class="na">
+        <span class="brand-icon">HP</span>&nbsp;&nbsp;
+        <h2>병원 예약시스템</h2> 
+      </div>             
+        <ul class="clearfix">
+            <li><a href="hp.html">진료예약</a>              
+                <ul>
+                    <li><a href="#">예약하기</a></li>
+                    <li><a href="#">예약확인</a></li>
+                    <li><a href="#">예약자현황</a></li>
+                    <li><a href="#">병원정보</a></li>
+                </ul>
+            </li>
+            <li><a href="mg.html">나의 관리</a>
+                <ul>
+                    <li><a href="https://www.hira.or.kr/dummy.do?pgmid=HIRAA030009200000">병원내역조회</a></li>
+                    <li><a href="https://www.kahp.or.kr/ho/medi/intro.do">건강검진</a></li>
+                    <li><a href="">BMI측정</a></li>
+                </ul>
+            </li>
+            <li><a href="#">검색</a>
+                <ul>
+                    <li><a href="">가까운병원</a></li>
+                    <li><a href="">인기병원</a></li>
+                    <li><a href="">내가 가본병원</a></li>
+                </ul>
+            </li>
+            <li><a href="fa.html">FAQ</a>
+                <ul>
+                    <li><a href="#">건의사항</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="search">
+      <input class="srch" type="search" name="" placeholder="검색">
+      <a href="#"><button class="btn">search</button></a>
+    </div>
+</header>  
+
+
+  <main id="app">  
+    <div class="ap">
+      <div class="form">
+        <div class="login-id-wrap">
+          <input placeholder="아이디" type="text" class="input-id"></input>
+        </div>
+        <div class="login-pw-wrap">
+          <input placeholder="비밀번호" type="password" class="input-pw"></input>
+        </div>
+        <div class="login-btn-wrap">
+          <button class="login-btn">로그인</button>
+        </div>
+        <div class="under-login">
+          <span class="stay-check">
+            <input type="checkbox" name="stay-btn" value="stay" class="stay-checkbox">로그인 상태 유지
+          </span>
+          <br>
+          <span class="ip-check">
+            <input type="checkbox" name="stay-btn" value="stay" class="ip-checkbox">IP 보안 
+          </span>
+        </div>
+        <div class="login-btn1">         
+        <button onClick="location.href='mb.html'">회원가입</button>        
+        <button onClick="location.href='if.html'">내정보수정</button>        
+        </div>       
+        <span class="h1">
+          <h1>검색</h1>
+        </span>
+      </div>                
+      <ul class="buttons">        
+        <li><button class="button"><h2>가까운병원</h2></button></li>
+        <li><button class="button"><h2>인기병원</h2></button></li>
+        <li><button class="button"><h2>내가 가본병원</h2></button></li>
+        <li><button class="button"><h2>병원정보</h2></button></li>        
+      </ul>
+    </div>
+    <aside id="sidebar">  
+      <div class="brand">        
+        <span class="brand-icon">HP</span>
+        <h2>병원 예약시스템</h2>
+      </div>
+      <div class="icon1">
+        <button onClick="location.href='login.html'">
+          <iconify-icon icon="tdesign:login"style="color: #3737c6;"width="160" height="50"></iconify-icon><h3>로그인</h3>
+        </button>
+        <button onClick="location.href='mb.html'">
+          <iconify-icon icon="ph:user" style="color: #3737c6;" width="160" height="50"></iconify-icon><h3>회원가입</h3>
+        </button>
+      </div>
+      <ul id="menu">
+        <li class="menu-item">
+          <button class="menu-button">
+            <iconify-icon class="menu-icon" icon="majesticons:chevron-down-line"></iconify-icon>
+            진료예약
+          </button>
+          <ul class="menu-sub">
+            <li class="menu-sub-item">
+              <a href="#">예약하기</a>
+            </li>
+            <li class="menu-sub-item">
+              <a href="#">예약확인</a>
+            </li>
+            <li class="menu-sub-item">
+              <a href="#">예약자 현황</a>
+            </li>
+            <li class="menu-sub-item">
+              <a href="#">병원정보</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <button class="menu-button">
+            <iconify-icon class="menu-icon" icon="majesticons:chevron-down-line"></iconify-icon>
+            나의 관리
+          </button>
+          <ul class="menu-sub">
+            <li class="menu-sub-item">
+              <a href="https://www.hira.or.kr/dummy.do?pgmid=HIRAA030009200000">병원내역 조회</a>
+            </li>
+            <li class="menu-sub-item">
+              <a href="https://www.kahp.or.kr/ho/medi/intro.do">건강검진</a>
+            </li>
+            <li class="menu-sub-item">
+              <a href="#">BMI측정</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <button class="menu-button">
+            <iconify-icon class="menu-icon" icon="majesticons:chevron-down-line"></iconify-icon>
+            검색
+          </button>
+          <ul class="menu-sub">
+            <li class="menu-sub-item">
+              <a href="#">가까운 병원</a>
+            </li>
+            <li class="menu-sub-item">
+              <a href="#">인기병원</a>
+            </li>
+            <li class="menu-sub-item">
+              <a href="#">내가 가본 병원</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <button class="menu-button">
+            <iconify-icon class="menu-icon" icon="majesticons:chevron-down-line"></iconify-icon>
+            FAQ
+          </button>
+          <ul class="menu-sub">
+            <li class="menu-sub-item">
+              <a href="#">건의사항</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button class="menu-toggle">
+        <iconify-icon icon="quill:hamburger" width="30" height="30" flip="horizontal,vertical"></iconify-icon>
+      </button>
+    </aside>
+    <span class="im">
+      <img src="sc.jpg" alt="">
+      <img src="sc1.jpg" alt="">
+      <img src="sc2.jpg" alt="">
+      <img src="sc3.jpg" alt="">
+    </span>
+  </div> 
+    <div class="dim-layer"></div>
+  </main>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="hp.js"></script>
+</body>
+</html>
